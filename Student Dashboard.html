@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<script>
+					var ctr=1;
+					function addE(ParentID,elementTag,elementId){
+						console.log('whut');
+						ctr=ctr+1;
+					    var p = document.getElementById(ParentID);
+						var newElement = document.createElement(elementTag);
+						//newElement.setAttribute('id', elementId);
+						newElement.setAttribute('class','title');
+						newElement.innerHTML = '<h4 id=e'+ctr+'>Lab '+ctr+'<button type ="button" style="float:right;">Delete Subscription</button></h4><p>Assignments to submit</p>';
+						p.appendChild(newElement);
+						}
+					
+
+</script>
+<html>
+	<head>
+		<title>Student Dashboard</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">My dashboard</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="#">Pending Assignments</a></li>
+								<li><a href="#">Weekly Submissions</a></li>
+								<!--<li><a href="#">Feugiat</a></li>
+								<li><a href="#">Tempus</a></li>
+								<li><a href="#">Adipiscing</a></li>-->
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+							<section>
+								<form class="search" method="get" action="#">
+									<input type="text" name="query" placeholder="Search" />
+								</form>
+							</section>
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="login_revised.html">
+											<h3>Homepage</h3>
+											<p>About us : Why use CodeStreak</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>My Dashboard</h3>
+											<p>Your weekly lab updates</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Edit Profile Settings</h3>
+										</a>
+									</li>
+									
+									
+								</ul>
+							</section>
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions stacked">
+									<li><a href="#" class="button large fit">Log In</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Lab Portfolio</a></h2>
+										<p></p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2015-11-01">November 1, 2015</time>
+										<a href="#" class="author"><span class="name">Student Name</span><img src="images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+								<!--<span class="image featured"><img src="images/pic01.jpg" alt="" /></span>-->
+								<div class="title" style="background-color:rgb(255, 229, 229)" id="Lab">
+										<h3>My Lab Subscriptions <button type ="button"  onclick="addE('Lab','div','e')">Add Subscription</button></h3>
+										<p id='e' >
+											<div class="title">
+											<h4>Lab 1 <button type ="button" style="float:right;">Delete Subscription</button></h3> </h4>
+											<p>Assignments to submit</p>
+											</div>
+										</p>
+								</div>
+								<div class="title" style="background-color:rgb(247, 238, 238)" >
+										<h3>Upcoming Labs</h3>
+										<p>
+											<div class="title">
+											<h4>Lab two</h4>
+											<p>Assignments to submit</p>
+											</div>
+										</p>
+								</div>
+								
+								<footer>
+									<ul class="stats">
+										<li><a href="#">General</a></li>
+										<li><a href="#" class="icon fa-heart">28</a></li>
+										<li><a href="#" class="icon fa-comment">128</a></li>
+									</ul>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<!--<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>-->
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+
+				
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
